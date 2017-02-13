@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Top_bar"
+        android:layout_marginBottom="2dp">
+    <TextView
+        android:id="@+id/txt_ThirdFragment_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="left"
+        android:text="全部卖家"
+        android:paddingLeft="@dimen/top_bar_paddingLeftRight"
+        android:paddingRight="@dimen/top_bar_paddingLeftRight"
+        android:paddingTop="@dimen/top_bar_topBottomPadding"
+        android:paddingBottom="@dimen/top_bar_topBottomPadding"
+        android:textSize="@dimen/top_bar_textSize"
+        android:textColor="@color/font_black"/>
+    <ImageView android:id="@+id/iv_search_second"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="0"
+        android:scaleType="center"
+        android:paddingLeft="@dimen/top_bar_paddingLeftRight"
+        android:paddingRight="@dimen/top_bar_paddingLeftRight"
+        android:paddingTop="@dimen/top_bar_topBottomPadding"
+        android:paddingBottom="@dimen/top_bar_topBottomPadding"
+        android:background="@drawable/topbar_to_gray"
+        android:src="@drawable/search"/>
+    </LinearLayout>
+    
+    <FrameLayout android:id="@+id/frameLayout_second_container_specialList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

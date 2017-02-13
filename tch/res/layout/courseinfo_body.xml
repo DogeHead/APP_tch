@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/button_white"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+            <ImageView android:id="@+id/iv_courseInfo"
+            	android:layout_width="80dp"
+           	 	android:layout_height="80dp"
+            	android:scaleType="center"
+            	android:layout_weight="0"
+            	android:src="@drawable/ad0"
+            	android:layout_gravity="center"
+            	android:layout_marginRight="20dp"/>
+            
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <!-- 课程名 -->
+                <TextView android:id="@+id/tv_courseName_courseInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:text="碧池杨钢管舞教学"/>
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0">
+                    <TextView android:id="@+id/tv_time_courseInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="24学时"/>
+                    <TextView android:id="@+id/tv_price_courseInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="￥480.00"/>
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>

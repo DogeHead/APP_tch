@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="@color/TabHost_Select"
+    android:orientation="horizontal">
+    <Button
+    		android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:textColor="@color/WHITE"
+   			android:textSize="14sp"
+   			android:text="定位中"
+    		android:id="@+id/btn_CitySearchBoxFragment_choose"
+    		android:background="#00000000"/>
+    <EditText
+        	android:id="@+id/et_CitySearchBoxFragment_search"
+        	android:layout_width="match_parent"
+        	android:layout_height="36dp"
+        	android:hint="  搜索卖家和特长"
+        	android:background="@drawable/boarder_shape"
+			android:textSize="14sp"
+        	android:drawableLeft="@drawable/search"
+        	android:layout_marginLeft="6dp"
+        	android:layout_marginRight="16dp"/>
+
+</LinearLayout>

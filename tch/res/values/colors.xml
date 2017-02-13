@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="WHITE">#fefefe</color>
+    <color name="BLACK">#ff000000</color>
+    <color name="RED">#ff1111</color>
+    <color name="GREEN">#40b450</color>
+    <color name="BLUE">#12B7F5</color>
+
+    <color name="TabHost_Select">#12B7F5</color>
+    <color name="TabHost_NoSelect">#777777</color>
+
+    <color name="Gold2">#EEC900</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="Sienna1">#FF8247</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="font_gray">#B6B6B7</color>
+    <color name="font_black">#333333</color>
+    <color name="bg_gray">#efefef</color>
+    
+
+    <color name="GRAY_99050505">#99050505</color>
+    <color name="Top_bar">#eeeeef</color>
+</resources>

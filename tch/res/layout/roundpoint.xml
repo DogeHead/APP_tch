@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:id="@+id/roundPoint"
+    android:layout_width="1dp"
+  	android:layout_height="1dp"
+    android:drawableStart="@drawable/point_adver_nor"
+    android:text="@null"
+    android:padding="1dp"
+    android:button="@null"/>

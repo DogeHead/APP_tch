@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_gray" >
+
+    <fragment android:id="@+id/fragment_homeFragment_citySearchBox"
+        android:name="com.example.app.HomeFragment.CitySearchBoxFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+    <com.example.app.MyClass.MyScrollView android:id="@+id/myScrollView_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/ll_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <fragment android:id="@+id/fragment_homeFragment_viewFlipperAdver"
+        android:name="com.example.app.HomeFragment.AdverFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- 特长分类标签 -->
+    <!--
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/WHITE"
+        android:textSize="@dimen/top_bar_textSize"
+        android:text="@string/special_kind_home"
+        android:gravity="left"/>
+      -->
+    <FrameLayout android:id="@+id/frameLayout_home_container_vpWithRp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+     <!-- 猜你喜欢标签 -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/WHITE"
+        android:padding="6dp"
+        android:paddingLeft="16dp"
+        android:drawableLeft="@drawable/like"
+        android:drawablePadding="6dp"
+        android:textSize="14sp"
+        android:text="@string/guess_like_home"
+        android:textColor="@color/BLUE"
+        android:gravity="left"/>
+    <LinearLayout android:id="@+id/ll_show_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:orientation="vertical"/>
+    </LinearLayout>
+    </com.example.app.MyClass.MyScrollView>
+</LinearLayout>

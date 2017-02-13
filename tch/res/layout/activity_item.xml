@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray" >
+    <ImageView android:id="@+id/iv_itemAty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="center"
+        android:src="@drawable/ad"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        android:background="@color/WHITE">
+        <TextView android:id="@+id/tv_courseName_itemAty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="课程名"
+            android:textSize="24sp"
+            android:textColor="@color/BLACK"/>
+        <TextView android:id="@+id/tv_intro_itemAty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="利用钢管为道具，综合爵士舞、现代舞、民族舞、芭蕾舞、瑜伽、肚皮舞、拉丁舞等各种不同风格舞种，又集合杂技、艺术体操、健身类别的运动而衍生出来的新型舞蹈。"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/font_gray"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView android:id="@+id/tv_price_itemAty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center"
+            android:text="￥580"
+            android:textSize="28sp"
+            android:textColor="@color/BLUE"/>
+            <Button android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="立即预定"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@color/RED"
+            android:textColor="@color/WHITE"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 位置 已售 -->
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@color/WHITE"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+        <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+            	android:layout_weight="1"
+            	android:button="@null"
+            	android:text="广州市番禺区大学城"
+                android:textSize="14sp"
+            	android:textColor="@color/font_gray"
+            	android:gravity="center|left"
+            	android:drawablePadding="4dp"
+            	android:drawableLeft="@drawable/location"
+            	/>
+        <RadioButton android:id="@+id/rb_sale_itemAty"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+            	android:layout_weight="2"
+            	android:button="@null"
+            	android:text="已售112节课"
+                android:textSize="14sp"
+            	android:textColor="@color/font_gray"
+            	android:gravity="center|left"
+            	android:drawablePadding="4dp"
+            	android:drawableLeft="@drawable/people"
+            	/>
+    </LinearLayout>
+
+    <!-- 评分板块 -->
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:background="@color/WHITE"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+        <RatingBar android:id="@+id/rating_score_itemAty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="3.5"
+            android:stepSize = "0.5"
+            android:numStars="5"
+            android:layout_marginRight="5dp"/>
+        <TextView android:id="@+id/tv_score_itemAty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center"
+            android:text="XX分"
+            android:textSize="14sp"
+            android:textColor="@color/font_gray"/>
+        </LinearLayout>
+        <!-- 评价 -->
+        <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+            	android:layout_weight="1"
+            	android:button="@null"
+            	android:text="评价"
+                android:textSize="14sp"
+            	android:textColor="@color/font_gray"
+            	android:gravity="center|right"
+            	android:drawablePadding="1dp"
+            	android:drawableRight="@drawable/right"/>
+    </LinearLayout>
+    
+    <!-- 卖家信息 -->
+    <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="卖家信息"
+            android:textSize="18sp"
+            android:background="@color/WHITE"
+            android:textColor="@color/font_gray"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    
+    <!-- 课程信息 -->
+    <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="课程信息"
+            android:textSize="18sp"
+            android:background="@color/WHITE"
+            android:textColor="@color/font_gray"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+</LinearLayout>
+</ScrollView>

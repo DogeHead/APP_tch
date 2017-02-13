@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+    <!-- 第一部分 -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/button_white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <TextView android:id="@+id/tv_authorName_goodsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="碧池杨"
+            android:gravity="center|left"/>
+        <TextView android:id="@+id/tv_state_goodsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/BLUE"
+            android:text="待上课"
+            android:gravity="center|right"/>
+        </LinearLayout>
+        <!-- 第二部分 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/courseinfo_body"/>
+        </LinearLayout>
+    <!-- 第三部分 -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:gravity="right"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <Button android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/BLUE"
+            android:textColor="@color/WHITE"
+            android:textSize="14sp"
+            android:text="确认上课"/>
+            
+    </LinearLayout>
+ </LinearLayout>

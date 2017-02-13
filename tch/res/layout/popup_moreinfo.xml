@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GRAY_99050505"
+    android:orientation="horizontal" >
+    <LinearLayout android:id="@+id/ll_next_moreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="7dp"
+        android:layout_gravity="center"
+        android:background="@drawable/next"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WHITE">
+    <!--android:groupIndicator="@null"-->
+     <ExpandableListView  
+    android:id ="@+id/expandableListView_pop"
+    android:layout_width ="match_parent"   
+    android:layout_height ="wrap_content"   
+        />
+     </LinearLayout>
+</LinearLayout>
